@@ -1,0 +1,10 @@
+.navbar .navbar-brand
+{
+    color: #FFF2D8;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link
+{
+    color: #FFF2D8;
+}

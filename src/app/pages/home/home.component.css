@@ -1,0 +1,74 @@
+.carousel-inner
+{
+    height: 600px;
+}
+
+.carousel-inner .carousel-item img
+{
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel-caption h2
+{
+    color: #EAD7BB;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.carousel-caption p 
+{
+    color: #FFF2D8;
+}
+
+.rowposter{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.rowimg
+{
+    max-height: 100px;
+    object-fit: contain;
+    width: 100%;
+    box-sizing: content-box;
+    transition: transform 450ms;
+    margin-right: 7px;
+    border-radius: 15%;
+}
+
+.rowimg:hover
+{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+.largeposter{
+    max-height: 300px;
+}
+
+.rowposter::-webkit-scrollbar
+{
+    display: none;
+}
+.streamlit-button {
+    background-color: rgb(222, 205, 173);
+    color: rgb(55, 91, 107);
+    border: 2px solid rgb(55, 91, 107);
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+    text-decoration: none; /* Remove default link underline */
+}
+
+.streamlit-button:hover {
+    background-color: #afb7ba;
+    color: white; /* Change text color on hover */
+}
+
+.minimalist-poster {
+    filter: brightness(50%); /* Adjust the brightness level (50% darker) */
+}

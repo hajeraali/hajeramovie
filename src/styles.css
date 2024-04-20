@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: monospace;
+    font-weight: 900;
+    
+    
+    background-color: #113946;
+    overflow-x: hidden;
+}
