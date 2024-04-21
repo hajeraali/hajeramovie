@@ -1,0 +1,197 @@
+<!-- quiz.component.html -->
+<div class="quiz-popup">
+    <h2>Movie Genre Quiz</h2>
+  
+    <!-- Question 1 -->
+    <div class="question">
+      <p>How are you feeling right now?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="q1" value="Happy" [(ngModel)]="answers[0]">
+          Happy
+        </label>
+        <label>
+          <input type="radio" name="q1" value="Sad" [(ngModel)]="answers[0]">
+          Sad
+        </label>
+        <label>
+          <input type="radio" name="q1" value="Stressed" [(ngModel)]="answers[0]">
+          Stressed
+        </label>
+        <label>
+          <input type="radio" name="q1" value="Excited" [(ngModel)]="answers[0]">
+          Excited
+        </label>
+      </div>
+    </div>
+  
+    <!-- Question 2 -->
+    <div class="question">
+      <p>Are you looking for a movie to watch alone or with others?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="q2" value="Alone" [(ngModel)]="answers[1]">
+          Alone
+        </label>
+        <label>
+          <input type="radio" name="q2" value="With Family" [(ngModel)]="answers[1]">
+          With Family
+        </label>
+        <label>
+          <input type="radio" name="q2" value="With Friends" [(ngModel)]="answers[1]">
+          With Friends
+        </label>
+        <label>
+          <input type="radio" name="q2" value="Date Night" [(ngModel)]="answers[1]">
+          Date Night
+        </label>
+      </div>
+    </div>
+
+     <!-- Question 3 -->
+  <div class="question">
+    <p>What's the weather like outside?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q3" value="Sunny" [(ngModel)]="answers[2]">
+        Sunny
+      </label>
+      <label>
+        <input type="radio" name="q3" value="Rainy" [(ngModel)]="answers[2]">
+        Rainy
+      </label>
+      <label>
+        <input type="radio" name="q3" value="Snowy" [(ngModel)]="answers[2]">
+        Snowy
+      </label>
+      <label>
+        <input type="radio" name="q3" value="Cloudy" [(ngModel)]="answers[2]">
+        Cloudy
+      </label>
+    </div>
+  </div>
+   <!-- Question 4: New Question -->
+   <div class="question">
+    <p>Do you prefer something?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q4" value="Light-hearted" [(ngModel)]="answers[3]">
+        Light-hearted
+      </label>
+      <label>
+        <input type="radio" name="q4" value="Dramatic" [(ngModel)]="answers[3]">
+        Dramatic
+      </label>
+      <label>
+        <input type="radio" name="q4" value="Adventurous" [(ngModel)]="answers[3]">
+        Adventurous
+      </label>
+      <label>
+        <input type="radio" name="q4" value="Comedic" [(ngModel)]="answers[3]">
+        Comedic
+      </label>
+    </div>
+   </div>
+    <!-- Question 5 -->
+  <div class="question">
+    <p>Are you in the mood for something:</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q5" value="Exciting" [(ngModel)]="answers[4]">
+        Exciting
+      </label>
+      <label>
+        <input type="radio" name="q5" value="Cozy" [(ngModel)]="answers[4]">
+        Cozy
+      </label>
+      <label>
+        <input type="radio" name="q5" value="Mysterious" [(ngModel)]="answers[4]">
+        Mysterious
+      </label>
+      <label>
+        <input type="radio" name="q5" value="Romantic" [(ngModel)]="answers[4]">
+        Romantic
+      </label>
+      
+    </div>
+  </div>
+
+  <!-- Question 6 -->
+  <div class="question">
+    <p>Would you like to watch something from a specific time period or setting?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q6" value="Modern" [(ngModel)]="answers[5]">
+        Modern
+      </label>
+      <label>
+        <input type="radio" name="q6" value="Historical" [(ngModel)]="answers[5]">
+        Historical
+      </label>
+      <label>
+        <input type="radio" name="q6" value="Futuristic" [(ngModel)]="answers[5]">
+        Futuristic
+      </label>
+      <label>
+        <input type="radio" name="q6" value="Fantasy" [(ngModel)]="answers[5]">
+        Fantasy
+      </label>
+    </div>
+  </div>
+
+  <!-- Question 7 -->
+  <div class="question">
+    <p>Are you craving a movie with lots of:</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q7" value="Action" [(ngModel)]="answers[6]">
+        Action
+      </label>
+      <label>
+        <input type="radio" name="q7" value="Suspense" [(ngModel)]="answers[6]">
+        Suspense
+      </label>
+      <label>
+        <input type="radio" name="q7" value="Humor" [(ngModel)]="answers[6]">
+        Humor
+      </label>
+      <label>
+        <input type="radio" name="q7" value="Romance" [(ngModel)]="answers[6]">
+        Romance
+      </label>
+    </div>
+  </div>
+
+  <!-- Question 8 -->
+  <div class="question">
+    <p>How much time do you have to watch a movie?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q8" value="Short" [(ngModel)]="answers[7]">
+        Short
+      </label>
+      <label>
+        <input type="radio" name="q8" value="Medium" [(ngModel)]="answers[7]">
+        Medium
+      </label>
+      <label>
+        <input type="radio" name="q8" value="Long" [(ngModel)]="answers[7]">
+        Long
+      </label>
+      <label>
+        <input type="radio" name="q8" value="Very Long" [(ngModel)]="answers[7]">
+        Very Long
+      </label>
+    </div>
+  </div>
+  
+    <!-- Add more questions here... -->
+    
+    <!-- Submit Button -->
+    <button (click)="submitQuiz()">Submit Quiz</button>
+
+    <div class="result" *ngIf="showResult">
+        <p>{{ resultMessage }}</p>
+    </div>
+  </div>
+  
