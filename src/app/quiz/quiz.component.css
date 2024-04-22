@@ -1,6 +1,14 @@
 /* quiz.component.css */
+.main{
+  background-image: linear-gradient(to bottom right,rgba(2, 51, 69, 0.5),rgba(64, 113, 151, 0.3),rgba(5, 36, 104, 0.5)),url(src\app\quiz\quizbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed
+}
 .quiz-popup {
-    max-width: 650px;
+    max-width: 800px;
     margin: 50px auto;
     padding: 30px;
     background-color: #fff;
@@ -12,8 +20,12 @@
   
   h2 {
     margin-bottom: 20px;
-    font-family: 'Arial', sans-serif;
-    color: #333;
+    font-family: 'Allura', serif;
+    color: rgb(3, 79, 106);
+    font-weight: bolder;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+    font-size: 45px;
   }
   
   .question {
@@ -28,7 +40,7 @@
   }
   
   .question:hover {
-    background-color: #10494a5e; /* Change to desired hover color */
+    background-color: #6e5dd12f; /* Change to desired hover color */
     cursor: pointer;
   }
   
@@ -38,19 +50,18 @@
   }
   
   button {
-    display: block;
     margin: 20px auto 0;
-    background-color: #007bff;
-    color: white;
+    background: linear-gradient(to bottom right,#2447b9,#b06ab3);
+    color: rgb(255, 242, 242);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Arial', sans-serif;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background: linear-gradient(to bottom right,#b06ab3,#2447b9);
   }
   
