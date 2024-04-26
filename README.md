@@ -10,3 +10,6 @@ Start a new terminal and open project location and run
 
 to insert a new component in the project run
 1. ng g c component_name
+
+NOTE: open the streamlit project using pycharm [this step is for working of recommendation button on home page]
+run --> streamlit run appnew.py
