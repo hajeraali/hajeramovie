@@ -23,6 +23,12 @@
       "fullName": "melonie kiro",
       "email": "melon@gmail.com",
       "password": "1234melon"
+    },
+    {
+      "id": "53bc",
+      "fullName": "abc xyz",
+      "email": "abc@gmail.com",
+      "password": "1234"
     }
   ]
 }
