@@ -1,0 +1,41 @@
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+  <div class="card">
+    <div class="card-header">
+      Login
+    </div>
+    <div class="card-body">
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          formControlName="email"
+          class="form-control"
+          name="email"
+          placeholder="Type your email"
+        />
+        <small *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">
+          <div *ngIf="email.errors?.['required']">Email is required.</div>
+          <div *ngIf="email.errors?.['email']">Email should be valid</div>
+        </small>
+      </div>
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          formControlName="password"
+          class="form-control"
+          name="password"
+          placeholder="Type your password"
+        />
+        <small *ngIf="password.invalid && (password.dirty || password.touched)" class="error-message">
+          <div *ngIf="password.errors?.['required']">Password is required.</div>
+        </small>
+      </div>
+      <!-- Error message div -->
+      <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+      <!-- End of error message div -->
+      <button class="login-button" [disabled]="loginForm.invalid" type="submit">SIGN IN</button>
+      <div class="register-link">Not a member? <a routerLink="/register">Register</a></div>
+    </div>
+  </div>
+</form>
