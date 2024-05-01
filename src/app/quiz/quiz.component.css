@@ -8,7 +8,7 @@
   background-attachment: fixed
 }
 .quiz-popup {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 50px auto;
     padding: 30px;
     background-color: #fff;
@@ -29,12 +29,20 @@
   }
   
   .question {
+    min-width: 600px; /* Set a minimum width for each question box */
+    height: 280px; /* Set the height for the question boxes */
+    margin-right: 20px; /* Add some spacing between question boxes */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #f9f9f9; /* Add background color */
+    border-radius: 8px; /* Add border radius */
+    border: 1px solid #ccc; /* Add border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
     display: inline-block; 
-    text-align: left; 
+    text-align: center; 
     width: 100%; 
     transition: background-color 0.3s ease;
   }
@@ -65,3 +73,41 @@
     background: linear-gradient(to bottom right,#b06ab3,#2447b9);
   }
   
+
+
+.quiz-container {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-popup {
+  width: 80%; /* Adjust the width as needed */
+}
+
+.questions-container {
+  display: flex;
+  flex-wrap: nowrap; /* Make sure questions don't wrap to the next line */
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+/* Hide scroll bar for webkit browsers */
+.questions-container::-webkit-scrollbar {
+  display: none;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.options label {
+  margin-bottom: 10px; /* Add some spacing between radio buttons */
+}
+
+.submit-btn {
+  margin-top: 20px;
+}
+
+.result {
+  margin-top: 20px;
+}

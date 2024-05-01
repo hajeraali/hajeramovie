@@ -1,57 +1,61 @@
-<!-- quiz.component.html -->
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Allura">
-<div class = main>
-<div class="quiz-popup">
+<div class="quiz-container">
+  <div class="quiz-popup">
     <h2>Uncover your ultimate Movie Genre!</h2>
   
-    <!-- Question 1 -->
-    <div class="question">
-      <p>How are you feeling right now?</p>
-      <div class="options">
-        <label>
-          <input type="radio" name="q1" value="Happy" [(ngModel)]="answers[0]">
-          Happy
-        </label>
-        <label>
-          <input type="radio" name="q1" value="Sad" [(ngModel)]="answers[0]">
-          Sad
-        </label>
-        <label>
-          <input type="radio" name="q1" value="Stressed" [(ngModel)]="answers[0]">
-          Stressed
-        </label>
-        <label>
-          <input type="radio" name="q1" value="Excited" [(ngModel)]="answers[0]">
-          Excited
-        </label>
+    <!-- Quiz content for the current question -->
+    <div class="questions-container">
+      <!-- Question 1 -->
+      <div class="question">
+        <br>
+        <p>How are you feeling right now?</p>
+        <div class="options">
+          <label>
+            <input type="radio" name="q1" value="Happy" [(ngModel)]="answers[0]">
+            Happy
+          </label>
+          <label>
+            <input type="radio" name="q1" value="Sad" [(ngModel)]="answers[0]">
+            Sad
+          </label>
+          <label>
+            <input type="radio" name="q1" value="Stressed" [(ngModel)]="answers[0]">
+            Stressed
+          </label>
+          <label>
+            <input type="radio" name="q1" value="Excited" [(ngModel)]="answers[0]">
+            Excited
+          </label>
+        </div>
       </div>
-    </div>
-  
-    <!-- Question 2 -->
-    <div class="question">
-      <p>Are you looking for a movie to watch alone or with others?</p>
-      <div class="options">
-        <label>
-          <input type="radio" name="q2" value="Alone" [(ngModel)]="answers[1]">
-          Alone
-        </label>
-        <label>
-          <input type="radio" name="q2" value="With Family" [(ngModel)]="answers[1]">
-          With Family
-        </label>
-        <label>
-          <input type="radio" name="q2" value="With Friends" [(ngModel)]="answers[1]">
-          With Friends
-        </label>
-        <label>
-          <input type="radio" name="q2" value="Date Night" [(ngModel)]="answers[1]">
-          Date Night
-        </label>
+      
+      <!-- Question 2 -->
+      <br>
+      <div class="question">
+        <p>Are you looking for a movie to watch alone or with others?</p>
+        <div class="options">
+          <label>
+            <input type="radio" name="q2" value="Alone" [(ngModel)]="answers[1]">
+            Alone
+          </label>
+          <label>
+            <input type="radio" name="q2" value="With Family" [(ngModel)]="answers[1]">
+            With Family
+          </label>
+          <label>
+            <input type="radio" name="q2" value="With Friends" [(ngModel)]="answers[1]">
+            With Friends
+          </label>
+          <label>
+            <input type="radio" name="q2" value="Date Night" [(ngModel)]="answers[1]">
+            Date Night
+          </label>
+        </div>
       </div>
-    </div>
 
-     <!-- Question 3 -->
+           <!-- Question 3 -->
+           <br>
   <div class="question">
     <p>What's the weather like outside?</p>
     <div class="options">
@@ -74,6 +78,7 @@
     </div>
   </div>
    <!-- Question 4: New Question -->
+   <br>
    <div class="question">
     <p>Do you prefer something?</p>
     <div class="options">
@@ -96,6 +101,7 @@
     </div>
    </div>
     <!-- Question 5 -->
+    <br>
   <div class="question">
     <p>Are you in the mood for something:</p>
     <div class="options">
@@ -120,6 +126,7 @@
   </div>
 
   <!-- Question 6 -->
+  <br>
   <div class="question">
     <p>Would you like to watch something from a specific time period or setting?</p>
     <div class="options">
@@ -143,6 +150,7 @@
   </div>
 
   <!-- Question 7 -->
+  <br>
   <div class="question">
     <p>Are you craving a movie with lots of:</p>
     <div class="options">
@@ -166,6 +174,7 @@
   </div>
 
   <!-- Question 8 -->
+  <br>
   <div class="question">
     <p>How much time do you have to watch a movie?</p>
     <div class="options">
@@ -187,8 +196,10 @@
       </label>
     </div>
   </div>
-  
-    <!-- Add more questions here... -->
+
+
+      <!-- Add more questions here... -->
+    </div>
     
     <!-- Submit Button -->
     <button (click)="submitQuiz()">Submit Quiz</button>
@@ -196,5 +207,6 @@
     <div class="result" *ngIf="showResult">
         <p>{{ resultMessage }}</p>
     </div>
+    
   </div>
 </div> 

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as confetti from 'canvas-confetti';
+
 
 @Component({
   selector: 'app-quiz',
