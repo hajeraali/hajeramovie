@@ -1,6 +1,7 @@
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Allura">
-<div class="quiz-container">
+<div class="main">
+  <div class="quiz-container">
   <div class="quiz-popup">
     <h2>Uncover your ultimate Movie Genre!</h2>
   
@@ -202,11 +203,12 @@
     </div>
     
     <!-- Submit Button -->
-    <button (click)="submitQuiz()">Submit Quiz</button>
+    <button (click)="submitQuiz()">Submit</button>
 
     <div class="result" *ngIf="showResult">
-        <p>{{ resultMessage }}</p>
+        <p style = "color: #fffacd; font-size:small;">{{ resultMessage }}</p>
     </div>
     
   </div>
 </div> 
+</div>
