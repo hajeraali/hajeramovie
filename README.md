@@ -6,7 +6,7 @@ STEPS TO IMPLEMENT ANGULAR PROJECT
 5. json-server --watch db.json
 
 Start a new terminal and open project location and run
-1. ng sere
+1. ng serve
 
 to insert a new component in the project run
 1. ng g c component_name
