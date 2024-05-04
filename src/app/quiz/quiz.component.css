@@ -1,11 +1,10 @@
 /* quiz.component.css */
 .main {
-  background-image: linear-gradient(to bottom right, rgba(2, 51, 69, 0.5), rgba(64, 113, 151, 0.5), rgba(5, 36, 104, 0.5)), url(src\app\quiz\quizbg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image:  url('src/app/quiz/_cinema-.gif');
   position: relative;
-  background-attachment: fixed
+  background-attachment: fixed;
+  margin: 0;
+  height: 100%;
 }
 
 .quiz-popup {
@@ -16,9 +15,10 @@
   max-width: 1000px;
   margin: 50px auto;
   padding: 4%;
-  background-color: rgba(2, 51, 69, 0.5);
+  background-color: rgba(2, 51, 69, 0.8);
   transition: transform 0.3s ease-in-out;
   text-align: center;
+  width: 60%;
 }
 
 h2 {
@@ -58,6 +58,8 @@ p{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: large;
   font-weight: lighter;
+  color: #fffacd; 
+  font-size:small;
 }
 .options label:hover {
   background-color: #fff6a1c7;
@@ -73,6 +75,7 @@ p{
   display: block;
   margin-bottom: 10px;
   transition: background-color 0.3s ease;
+  margin-bottom: 10px;
 }
 
 button {
@@ -98,11 +101,6 @@ button:hover {
   justify-content: center;
 }
 
-.quiz-popup {
-  width: 60%;
-  /* Adjust the width as needed */
-}
-
 .questions-container {
   padding-left: 5%;
   padding-right: 5%;
@@ -121,11 +119,6 @@ button:hover {
 .options {
   display: flex;
   flex-direction: column;
-}
-
-.options label {
-  margin-bottom: 10px;
-  /* Add some spacing between radio buttons */
 }
 
 .submit-btn {

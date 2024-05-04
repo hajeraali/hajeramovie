@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import * as confetti from 'canvas-confetti';
-
-
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
@@ -168,7 +165,6 @@ export class QuizComponent {
     });
 
     console.log("Scores:", scores); // Log scores for debugging
-
     let maxScore = 0;
     let resultGenre: string = '';
 

@@ -29,6 +29,60 @@
       "fullName": "abc xyz",
       "email": "abc@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "cace",
+      "fullName": "Vaidehi Kale",
+      "email": "abcd@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "aecb",
+      "fullName": "snehal k",
+      "email": "snehalpk@gmail.com",
+      "password": "asdf"
+    },
+    {
+      "id": "ebd1",
+      "fullName": "jerry tim",
+      "email": "jerry@gmail.com",
+      "password": "1234user"
+    },
+    {
+      "id": "ca60",
+      "fullName": "puro pun",
+      "email": "pur@gmail.com",
+      "password": "1234pum"
+    },
+    {
+      "id": "67ac",
+      "fullName": "puro pun",
+      "email": "pur@gmail.com",
+      "password": "1234pum"
+    },
+    {
+      "id": "861b",
+      "fullName": "ken wiz",
+      "email": "k@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "5f07",
+      "fullName": "Charles Benz",
+      "email": "charles@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "c8ae",
+      "fullName": "Charles Benz",
+      "email": "charles@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "f503",
+      "fullName": "charles benz",
+      "email": "c@gmail.com",
+      "password": "1111"
     }
   ]
 }

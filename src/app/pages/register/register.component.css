@@ -1,3 +1,7 @@
+.reg{
+  background-image: url('src/app/pages/register/bg.gif');
+  height: 70%;
+}
 .message {
     position: fixed;
     top: 20px;
@@ -17,7 +21,7 @@
     background-color:coral;
   }
   .card {
-    top: 80px;
+    top: 140px;
     width: 360px;
     margin: 0 auto;
     padding: 20px;

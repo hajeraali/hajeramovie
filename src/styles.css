@@ -1,11 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-
-
 body{
+    height: 100%;
     font-family: monospace;
-    font-weight: 900;
-    
-    
+    font-weight: 900;      
     background-color: #113946;
     overflow-x: hidden;
 }

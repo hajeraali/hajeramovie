@@ -6,7 +6,7 @@
               </div>
 
               <div class="col-lg-2">
-                <button class="btn btn-md">Search</button>
+                <button type="button" class="btn btn-md">Search</button>
               </div>
         </div>
 
@@ -18,7 +18,7 @@
                     <div class="row">
                         <div class="col-lg-3 mt-4 mb-4" *ngIf="s.poster_path">
                                 <img
-                                src="https://image.tmdb.org/t/p/original/{{ s.poster_path }}" 
+                                src="https://image.tmdb.org/t/p/original/{{ s.poster_path }}" alt="pqr"
                                 [routerLink]="['/movie',s.id]"    
                                 >
                         </div>

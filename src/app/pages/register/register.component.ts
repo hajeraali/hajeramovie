@@ -66,7 +66,7 @@ export class RegisterComponent {
   
     setTimeout(() => {
       document.body.removeChild(messageContainer);
-    }, 3000); // Remove message after 3 seconds
+    }, 1000); // Remove message after 3 seconds
   }
   
 }
